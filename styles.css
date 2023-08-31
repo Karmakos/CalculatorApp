@@ -1,0 +1,59 @@
+body{
+    background-color: aqua;
+    margin-bottom: 0;
+}
+h1{
+    font-size: 64px;
+}
+h3{
+    font-size: 26px;
+    margin: 42px 110px;
+}
+.age-div{
+    background-color: azure;
+    text-align: center;
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+}
+#date-slt{
+    font-size: 31px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 20px;
+    padding: 20px 10px;
+    display: block;
+    position: relative;
+    margin-left: 35%;
+    margin-top: 4%;
+}
+#date-slt:hover{
+cursor: pointer;
+
+}
+#calc-btn{
+    margin-top: 80px;
+    width: 180px;
+    height: 50px;
+    font-size: 30px;
+    background: aquamarine;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#calc-btn:hover{
+    background: lightblue;
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    bottom: 0%;
+    
+}
+.copyright{
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+    margin-bottom: 0;
+}
