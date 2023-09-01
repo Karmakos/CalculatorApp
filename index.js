@@ -12,19 +12,19 @@ var ageMS = (currentTime - userDate);
 var ageDays = (ageMS/(1000*3600*24));
 var ageDaysRounded = Math.floor(ageDays);
 // getting age in months
-var ageMonths = (ageDaysRounded/30);
+var ageMonths = Math.floor(ageDaysRounded/30);
 // getting age in years
-var ageYears = (ageMonths/12);
+var ageYears = Math.floor(ageMonths/12);
 
 // display the age in the HTML div
-if (ageYears>0) {
-    document.getElementById('result-div').innerHTML='<h3>You are '+ ageYears +' Years Old</h3>';
-}
+if  (ageDaysRounded>0 && ageDaysRounded<=30){
+    document.getElementById('result-div').innerHTML='<h3>You are '+ ageDaysRounded + ' Days Old</h3>'
+    }
 else if(ageMonths>0 && ageMonths<=12){
     document.getElementById('result-div').innerHTML='<h3>You are '+ageMonths+ ' Months Old</h3>'
 }
-else if  (ageDaysRounded>0 && ageDaysRounded<=30){
-document.getElementById('result-div').innerHTML='<h3>You are '+ ageDaysRounded + ' Days Old</h3>'
+else if (ageYears>0) {
+    document.getElementById('result-div').innerHTML='<h3>You are '+ ageYears +' Years Old</h3>';
 }
 else {
     document.getElementById('result-div').innerHTML='<h3>Your Birthdate Entry is Invalid!</h3>';
